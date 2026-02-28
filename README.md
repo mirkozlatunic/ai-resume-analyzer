@@ -1,5 +1,9 @@
 ## AI Resume Analyzer
 
+![Home page where the “Upload resume” text is shown](public/images/Screenshot%202026-02-28%20at%2011.02.50%E2%80%AFAM.png)
+
+![Resume review page](public/images/Screenshot%202026-02-28%20at%2011.03.02%E2%80%AFAM.png)
+
 **AI-powered resume analyzer that scores your CV, simulates ATS checks, and delivers job-specific feedback so you can track applications and improve faster.**
 
 Live demo: [`ai-resume-analyzer on puter.com`](https://puter.com/app/zlm-ai-resume-analyzer)
@@ -125,4 +129,3 @@ Some key directories:
 - **Product thinking**: Focused on a real-world job search problem with clear user value.
 
 If you’re reviewing this as part of a job application and want to know more about implementation details, feel free to open an issue or reach out. 🙂
-
