@@ -1,87 +1,128 @@
-# Welcome to React Router!
+## AI Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+**AI-powered resume analyzer that scores your CV, simulates ATS checks, and delivers job-specific feedback so you can track applications and improve faster.**
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+Live demo: [`ai-resume-analyzer on puter.com`](https://puter.com/app/zlm-ai-resume-analyzer)
 
-## Features
+---
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+### Overview
 
-## Getting Started
+This project is a full-stack React application that helps job seekers:
 
-### Installation
+- **Analyze** their resume content with AI
+- **Simulate ATS checks** (keyword matching and structure)
+- **Score resumes** based on role-specific criteria
+- **Get actionable feedback** on how to improve
+- **Track applications** and compare resume versions over time
 
-Install the dependencies:
+It is designed to be a **portfolio-quality project** to demonstrate modern frontend engineering, TypeScript, routing, and clean UI work.
+
+---
+
+### Features
+
+- **AI-powered analysis**
+  - Extracts key information (experience, skills, education)
+  - Highlights gaps and missing keywords based on target roles
+  - Generates improvement suggestions in natural language
+
+- **ATS-style checks**
+  - Looks at formatting, headings, and structure
+  - Estimates keyword match between resume and target job description
+
+- **Application tracking**
+  - Save and view multiple resumes
+  - Compare scores and feedback across applications
+
+- **Modern frontend stack**
+  - React Router app with data loading and mutations
+  - TypeScript-first setup
+  - Tailwind CSS styling
+
+---
+
+### Tech Stack
+
+- **Framework**: React Router (full-stack template)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Build tool**: Vite
+- **Containerization**: Docker (optional)
+
+---
+
+### Getting Started
+
+#### Prerequisites
+
+- Node.js (LTS recommended)
+- npm
+
+#### Installation
+
+Clone the repository and install dependencies:
 
 ```bash
+git clone https://github.com/mirkozlatunic/ai-resume-analyzer.git
+cd ai-resume-analyzer
 npm install
 ```
 
-### Development
+#### Development
 
-Start the development server with HMR:
+Run the development server:
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+The app will be available at `http://localhost:5173`.
 
-## Building for Production
+#### Production Build
 
-Create a production build:
+Create an optimized production build:
 
 ```bash
 npm run build
 ```
 
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
+You can then run the built server with:
 
 ```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+npm run start
 ```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
 
 ---
 
-Built with ❤️ using React Router.
+### Docker (Optional)
+
+Build and run the app in Docker:
+
+```bash
+docker build -t ai-resume-analyzer .
+
+docker run -p 3000:3000 ai-resume-analyzer
+```
+
+---
+
+### Project Structure (High Level)
+
+Some key directories:
+
+- `app/` – React Router routes, loaders, actions, and UI components
+- `types/` – Shared TypeScript types for resume data and scoring
+- `contants/` – Shared constants and configuration
+
+---
+
+### How This Project Showcases My Skills
+
+- **Frontend architecture**: Route-based layout, shared components, and clear separation of concerns.
+- **TypeScript usage**: Strong typing for resume data, analysis results, and UI props.
+- **Developer experience**: Vite, hot reload, and clean project structure.
+- **Product thinking**: Focused on a real-world job search problem with clear user value.
+
+If you’re reviewing this as part of a job application and want to know more about implementation details, feel free to open an issue or reach out. 🙂
+
